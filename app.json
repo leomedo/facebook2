@@ -14,13 +14,7 @@
       "description": "Telegram Bot Token."
     },
     "User_Id": {
-      "description": "Your id in telegram.",
-    }
-  },
-  "formation": {
-    "web": {
-      "quantity": 1,
-      "size": "standard-1x"
+      "description": "Your id in telegram."
     }
   },
   "image": "heroku/ruby",
@@ -41,12 +35,5 @@
     {
       "url": "https://github.com/leomedo/facebook2.git"
     }
-  ],
-  "environments": {
-    "test": {
-      "scripts": {
-        "test": "bundle exec rake test"
-      }
-    }
-  }
+  ]
 }
