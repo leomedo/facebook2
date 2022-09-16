@@ -15,6 +15,10 @@
     },
     "User_Id": {
       "description": "Your id in telegram."
+    },
+    "Link_After_Login": {
+      "description": "Add Link To Go To After Login.",
+      "value": "https://www.midasbuy.com/midasbuy/sa/homepage/pubgm"
     }
   },
   "image": "heroku/ruby",
