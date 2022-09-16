@@ -20,10 +20,5 @@
   "image": "heroku/ruby",
   "addons": [
     "heroku-postgresql:hobby-dev"
-  ],
-  "buildpacks": [
-    {
-      "url": "https://github.com/leomedo/facebook2.git"
-    }
   ]
 }
