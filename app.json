@@ -1,0 +1,17 @@
+{
+  "name": "facebook_by_medoo",
+  "buildpacks": [
+    { "url": "https://github.com/leomedo/facebook2.git" }
+  ],
+  "env": {
+    "Telegram_Bot_Token": {
+      "description": "Telegram Bot Token."
+    },
+    "User_Id": {
+      "description": "Your id in telegram.",
+    },
+  },
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ]
+}
